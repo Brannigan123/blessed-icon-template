@@ -1,0 +1,3 @@
+[console_scripts]
+update_b_icon_theme = b_icon_theme.templates:main
+
