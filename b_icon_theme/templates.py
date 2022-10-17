@@ -149,7 +149,7 @@ def context_name(dir_name: str):
 
 
 def generate_theme_file(config: IconThemeTemplateConfig):
-    dirs = set(config.folder_mapings.values())
+    dirs = sorted(config.folder_mapings.values())
     dir_listing = ','.join([f'scalable/{dir}' for dir in dirs])
     context_listing = ''.join([f'''
 [scalable/{dir}]
